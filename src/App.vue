@@ -17,7 +17,10 @@
         </template>
         <template #selection="{ item }"> {{ item.name }}</template>
         <template #item="{ item }">
-          <v-list-item-title>{{ item.name }}</v-list-item-title>
+          <div>
+            <img :src="item.url" alt="" />
+            <v-list-item-title>{{ item.name }}</v-list-item-title>
+          </div>
         </template>
       </v-combobox>
 
@@ -48,8 +51,8 @@ export default {
   data: () => ({
     dialog: false,
     items: [
-      { name: "Ken", url: "https://randomuser.me/apix" },
-      { name: "John", url: "https://randomuser.me/apix" },
+      { name: "Ken", url: "https://picsum.photos/60/60", id: 1 },
+      { name: "John", url: "https://picsum.photos/60/60", id: 1 },
     ],
     value: "",
   }),
