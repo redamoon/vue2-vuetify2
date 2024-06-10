@@ -52,7 +52,7 @@ export default {
     dialog: false,
     items: [
       { name: "Ken", url: "https://picsum.photos/60/60", id: 1 },
-      { name: "John", url: "https://picsum.photos/60/60", id: 1 },
+      { name: "John", url: "https://picsum.photos/60/60", id: 2 },
     ],
     value: "",
   }),
