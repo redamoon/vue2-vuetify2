@@ -42,6 +42,7 @@
           </v-card-actions>
         </v-card>
       </v-dialog>
+      {{ themesColorPrimary }}
     </v-container>
   </v-app>
 </template>
@@ -56,6 +57,11 @@ export default {
     ],
     value: "",
   }),
+  computed: {
+    themesColorPrimary() {
+      return this.$vuetify.theme.themes.light.primary;
+    },
+  },
   methods: {
     clickPrepend() {
       this.dialog = true;
